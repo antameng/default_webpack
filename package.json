@@ -1,0 +1,15 @@
+{
+  "name": "default_webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"webpack-dev-server --config --env development ./webpackConfig/webpack.dev.config.js",
+    "build:dev": "cross-env NODE_ENV=development webpack --coinfig  ./webpackConfig/webpack.dev.config.js",
+    "build:prod": "cross-env NODE_ENV=production webpack --coinfig  ./webpackConfig/webpack.prod.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
